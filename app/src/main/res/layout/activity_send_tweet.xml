@@ -1,60 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFC107"
-    tools:context=".SendTweetActivity">
+    tools:context=".SendTweetActivity"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/edtSendTweet"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter Your Description.."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.409"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnSendTweet"
-        android:layout_width="wrap_content"
+        android:layout_width="108dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="0dp"
         android:background="#FF9800"
-        android:text="Send Tweet"
-        app:layout_constraintBottom_toTopOf="@+id/btnViewTweets"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtSendTweet" />
+        android:gravity="center|center_horizontal"
+        android:text="Send Tweet" />
 
     <Button
         android:id="@+id/btnViewTweets"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="0dp"
         android:background="#2196F3"
-        android:text="Show Other User's Tweet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSendTweet" />
+        android:text="Show Other User's Tweet" />
 
     <ListView
         android:id="@+id/viewTweetListView"
-        android:layout_width="397dp"
-        android:layout_height="482dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewTweets"
-        app:layout_constraintVertical_bias="1.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp" />
+</LinearLayout>
